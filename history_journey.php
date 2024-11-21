@@ -1,0 +1,1 @@
+<div class="history_journey" id="history_journey"><span class="disabled" title="К началу" id="history_journey_first">&lt;&lt;</span> <span class="disabled" title="Назад" id="history_journey_undo">&lt;</span> <span class="disabled" title="Вперёд" id="history_journey_redo">&gt;</span> <span class="disabled" title="В конец" id="history_journey_last">&gt;&gt;</span> </div>

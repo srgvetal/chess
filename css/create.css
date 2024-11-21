@@ -1,0 +1,4 @@
+#pieces img {border:1px solid rgba(0,0,0,0); }
+#pieces img.sel {border:1px solid red; }
+#create-buttons {display:block; margin-left:700px; color:blue; }
+#create-buttons div {cursor:pointer; margin-bottom:5px;}

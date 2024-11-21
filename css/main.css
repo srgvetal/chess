@@ -1,0 +1,22 @@
+ul[data-role="tabs"] {margin-left:0px !important;}
+li[data-role="tabitem"] { margin:0 10px; margin-right:30px; opacity:1; color: #111 !important; list-style-type: none; font:35px "Ubuntu"; display:inline-block; cursor: pointer;}
+
+.inactive {opacity:0 !important;}
+
+[data-role="header"]:after {
+    background: #C2C2C2;
+    content: "";
+    border-top: 1px solid #afafaf;
+    height: 14px;
+    width: 100%;
+    display: block;
+}
+
+#board, #pieces {margin:30px;}
+
+body { background: #ededf0 url("../img/background_paper30.png") repeat top left; margin:0; padding:0; }
+
+#board {margin-bottom:0px;}
+
+
+

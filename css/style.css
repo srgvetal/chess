@@ -1,0 +1,92 @@
+body.login {
+        background: url('../img/chess_bkg.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+#loginModal label {
+    padding-top:5px;
+    margin-bottom:0px;
+}
+
+#loginModal button {
+    margin-top:10px;
+}
+
+#loginModal h2 {
+    color:white;
+    text-align:center;
+}
+
+#loginModal h2 span {
+    font-size:93%;
+}
+
+#loginModal .tabs.well {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+/*
+.puzzles li {
+    counter-reset:li;
+    list-style: decimal
+}*/
+.puzzles li {
+    padding:10px;
+    border:1px solid rgba(0,0,0,0);
+    cursor:pointer;
+    float:left;
+}
+
+.puzzles li:hover {
+    padding:10px;
+    border:1px solid grey;
+}
+
+
+.puzzles ol {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset:  item; /* Обнуляем счетчик списка */
+   }
+.puzzles li:not(.wonumbers):before, .puzzles .numberr {
+    content: counter(item); /* Добавляем к числам скобку */
+    counter-increment: item; /* Задаём имя счетчика */
+    position:absolute;
+    font-size:30px;
+    color:black;
+    text-shadow:white 1px 1px;
+    margin-left:2px;
+
+   }
+
+
+.puzzles .btn-primary {
+    margin:10px;
+}
+
+.news {
+    line-height:150%;
+}
+
+
+.container .row {
+}
+
+form .alert {
+    margin:15px 0 0 0;
+}
+
+.brbr-spacer { height:40px; }
+
+ul.news a { text-decoration: underline; }
+/*
+.fa-refresh {
+    padding-top:1px;
+}
+.fa-spin {
+    margin-top:1px;
+    padding-top:0px;
+}*/
+
+.italic { font-style: italic; }
