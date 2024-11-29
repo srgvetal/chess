@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!="/chess/admin.php") { print "Permission denied"; exit(); }
+if ($cb!="/admin.php") { print "Permission denied"; exit(); }
 if (!isset($_GET['user'])) { print "User id is not defined"; exit(); }
 
 #проверяем соединение

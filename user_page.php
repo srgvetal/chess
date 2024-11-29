@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!="/chess/admin.php") { header("Location: /chess/"); exit(); }
+if ($cb!="/admin.php") { header("Location: /"); exit(); }
 
 ?><!DOCTYPE html>
 <html lang="ru">

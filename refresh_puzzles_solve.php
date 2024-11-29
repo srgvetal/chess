@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!="/chess/admin.php"&&$cb!="/chess/user.php") { print "Permission denied"; exit(); }
+if ($cb!="/admin.php"&&$cb!="/user.php") { print "Permission denied"; exit(); }
 
 
 #проверяем соединение

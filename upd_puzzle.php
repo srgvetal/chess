@@ -5,7 +5,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!='/chess/admin.php') { header("Location: /chess/"); exit(); }
+if ($cb!='/admin.php') { header("Location: /"); exit(); }
 
 // echo "UPDATE puzzles SET puzzle_fen='".safeString($_POST['fen'])."', puzzle_boardsize='".safeString($_POST['boardsize'])."' WHERE puzzle_id='".$_POST['puzzle_id']."'";
 //

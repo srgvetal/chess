@@ -5,7 +5,7 @@
 require_once('check.php');
 $cb=check();
 
-if (($cb!='/chess/admin.php')&&($cb!='/chess/user.php')) { header("Location: /chess/"); exit(); }
+if (($cb!='/admin.php')&&($cb!='/user.php')) { header("Location: /"); exit(); }
 
 
 $query = mysql_query("SELECT puzzle_fen_finished, annotation, puzzlesolve_jhistory, puzzlesolve_thistory, puzzlesolve_blacklast FROM puzzlesolves WHERE puzzle_id='".$_POST['puzzle_id']."' AND user_id=$user_id AND puzzlesolve_jhistory<>'' ORDER BY puzzlesolve_timestamp DESC LIMIT 1;");

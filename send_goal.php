@@ -5,7 +5,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!='/chess/admin.php') { header("Location: /chess/"); exit(); }
+if ($cb!='/admin.php') { header("Location: /"); exit(); }
 
 
 $query = mysql_query("SELECT * FROM puzzles WHERE puzzle_id='".$_POST['puzzle_id']."'");

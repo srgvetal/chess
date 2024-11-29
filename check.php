@@ -31,8 +31,8 @@ function check(){
 
             mysql_query("UPDATE users SET user_timestamp_lastenter=NOW() WHERE user_id='".$user_id."'");
             
-            if ($userdata['user_admin']==1) return "/chess/admin.php";
-            else return "/chess/user.php";
+            if ($userdata['user_admin']==1) return "/admin.php";
+            else return "/user.php";
         }
     }
     else

@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!="/chess/admin.php") { print "Permission denied"; exit(); }
+if ($cb!="/admin.php") { print "Permission denied"; exit(); }
 
 if ($_GET['user']) $user_toview=$_GET['user']; else
 if ($_POST['user']) $user_toview=$_POST['user']; else {

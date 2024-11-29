@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($_GET['id']&&$_GET['user']&&$cb!='/chess/admin.php') { header("Location: /chess/"); exit(); }
+if ($_GET['id']&&$_GET['user']&&$cb!='/admin.php') { header("Location: /"); exit(); }
 
 ?>
 <!DOCTYPE html>
