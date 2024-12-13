@@ -76,7 +76,7 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 });
 </script>
 			    <?php include 'chat_window.php'; ?>
-				<img src=/img/bor23.png style="position:absolute; right:10px; bottom:10px; width:50px;margin-top:40px;">
+				<img src=img/bor23.png style="position:absolute; right:10px; bottom:10px; width:50px;margin-top:40px;">
 
 
 			</div>
