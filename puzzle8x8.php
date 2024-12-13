@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($_GET['id']&&$cb!='/admin.php') { header("Location: /"); exit(); }
+if ($_GET['id']&&$cb!='admin.php') { header("Location: ./"); exit(); }
 
 
 if ($_GET['id']=='new') {
@@ -69,7 +69,7 @@ if ($_GET['id']=='new') {
             <input type="text" placeholder="поставьте задачу..." style="display:block;position:absolute;top:650px;left:30px; font-size:30px; width:500px; " id="goal"/>
 <script>
         $.ajax({
-            url: '/load_goal.php',
+            url: 'load_goal.php',
             type: 'POST',
             data: { puzzle_id: $_GET['id'] },
             success: function(result) {
@@ -83,7 +83,7 @@ $('#goal').keyup(function(){
     clearTimeout(timer);
     timer=setTimeout(function(){
         $.ajax({
-            url: '/send_goal.php',
+            url: 'send_goal.php',
             type: 'POST',
             data: { puzzle_id: $_GET['id'],
                 goal: $('#goal').val() },

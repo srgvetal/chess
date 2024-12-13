@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($_GET['id']&&$cb!='/admin.php') { header("Location: /"); exit(); }
+if ($_GET['id']&&$cb!='admin.php') { header("Location: ./"); exit(); }
 
 
 if ($_GET['id']=='new') {
@@ -70,7 +70,7 @@ if ($_GET['id']=='new') {
 <script>
 
         $.ajax({
-            url: '/load_goal.php',
+            url: 'load_goal.php',
             type: 'POST',
             data: { puzzle_id: $_GET['id'] },
             success: function(result) {
@@ -84,7 +84,7 @@ $('#goal').keyup(function(){
     clearTimeout(timer);
     timer=setTimeout(function(){
         $.ajax({
-            url: '/send_goal.php',
+            url: 'send_goal.php',
             type: 'POST',
             data: { puzzle_id: $_GET['id'],
                 goal: $('#goal').val() },

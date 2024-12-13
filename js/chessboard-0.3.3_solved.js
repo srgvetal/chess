@@ -1388,7 +1388,7 @@ function stopDraggedPiece(location) {
         var historytemp=$('#history').html();
         // console.log('send: '+historytemp);
       //   $.ajax({
-      //   url: '/make_move.php',
+      //   url: 'make_move.php',
       //   type: 'POST',
       //   data: { puzzle_id: $_GET['id'],
       //   // goal: 
@@ -1918,7 +1918,7 @@ if (($_GET['id'])&&($_GET['id']!='new')) {
   // console.log('load puzzle');
   // console.log($_GET['id']);
   $.ajax({
-    url: '/load_puzzle_solved.php',
+    url: 'load_puzzle_solved.php',
     type: 'POST',
     data: { puzzle_id: $_GET['id'], user_id: $_GET['user']},
     success: function(result) {
@@ -1965,7 +1965,7 @@ function refreshBoard(){
   if (ANIMATION_HAPPENING) return;
 
   $.ajax({
-    url: '/load_puzzle_solved.php',
+    url: 'load_puzzle_solved.php',
     type: 'POST',
     data: { puzzle_id: $_GET['id'], user_id: $_GET['user']},
     success: function(result) {
@@ -2115,7 +2115,7 @@ function hj_do() {
         var historytemp=$('#history').html();
         // console.log('send: '+historytemp);
       //   $.ajax({
-      //   url: '/make_move.php',
+      //   url: 'make_move.php',
       //   type: 'POST',
       //   data: { puzzle_id: $_GET['id'],
       //   // goal: 

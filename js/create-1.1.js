@@ -15,8 +15,8 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 
 $(document).ready(function(){
     $('#back').click(function(){
-        if ($_GET['user']) location.href="/user_page.php?user="+$_GET['user'];
-        else location.href="/admin.php";
+        if ($_GET['user']) location.href="user_page.php?user="+$_GET['user'];
+        else location.href="admin.php";
     });
 });
 

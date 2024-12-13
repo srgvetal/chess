@@ -1388,7 +1388,7 @@ function stopDraggedPiece(location) {
         console.log(blacklast*1);
         // console.log('send: '+historytemp);
         $.ajax({
-        url: '/make_move.php',
+        url: 'make_move.php',
         type: 'POST',
         data: { puzzle_id: $_GET['id'],
         // goal: 
@@ -1919,7 +1919,7 @@ if (($_GET['id'])&&($_GET['id']!='new')) {
   // console.log('load puzzle');
   // console.log($_GET['id']);
   $.ajax({
-    url: '/load_puzzle_solve.php',
+    url: 'load_puzzle_solve.php',
     type: 'POST',
     data: { puzzle_id: $_GET['id']},
     success: function(result) {
@@ -1949,7 +1949,7 @@ if (($_GET['id'])&&($_GET['id']!='new')) {
           // setTimeout(function(){setCurrentPosition(fenToObj(result));drawPositionInstant();},500);
 
                     $.ajax({
-                    url: '/make_move.php',
+                    url: 'make_move.php',
                     type: 'POST',
                     data: { puzzle_id: $_GET['id'],
                     // goal: 
@@ -1985,7 +1985,7 @@ function saveFen(fen){
   if (window.location.href.indexOf('8x8')!=-1) boardsizesend='8x8';
   // console.log($_GET['id']+' '+fen);
   $.ajax({
-    url: '/upd_puzzle.php',
+    url: 'upd_puzzle.php',
     type: 'POST',
     data: { puzzle_id: $_GET['id'],
     // goal: 
@@ -2112,7 +2112,7 @@ function hj_do() {
         var historytemp=$('#history').html();
         // console.log('send: '+historytemp);
         $.ajax({
-        url: '/make_move.php',
+        url: 'make_move.php',
         type: 'POST',
         data: { puzzle_id: $_GET['id'],
         // goal: 

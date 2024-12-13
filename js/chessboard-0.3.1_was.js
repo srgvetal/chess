@@ -1822,7 +1822,7 @@ if (($_GET['id'])&&($_GET['id']!='new')) {
   // console.log('load puzzle');
   // console.log($_GET['id']);
   $.ajax({
-    url: '/load_puzzle_was.php',
+    url: 'load_puzzle_was.php',
     type: 'POST',
     data: { puzzle_id: $_GET['id'], user_id: $_GET['user']},
     success: function(result) {

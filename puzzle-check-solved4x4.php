@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($_GET['id']&&$_GET['user']&&$cb!='/admin.php') { header("Location: /"); exit(); }
+if ($_GET['id']&&$_GET['user']&&$cb!='admin.php') { header("Location: ./"); exit(); }
 
 ?>
 <!DOCTYPE html>
@@ -56,7 +56,7 @@ if ($_GET['id']&&$_GET['user']&&$cb!='/admin.php') { header("Location: /"); exit
             <h3 style="display:block;position:absolute;top:435px;left:30px; font-size:30px; width:500px; " id="goal"></h3>
 <script>
         $.ajax({
-            url: '/load_goal.php',
+            url: 'load_goal.php',
             type: 'POST',
             data: { puzzle_id: $_GET['id'] },
             success: function(result) {

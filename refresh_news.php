@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!="/admin.php") { print "Permission denied"; exit(); }
+if ($cb!="admin.php") { print "Permission denied"; exit(); }
 
 
 #проверяем соединение

@@ -3,7 +3,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!='/user.php') { header("Location: /"); exit(); }
+if ($cb!='user.php') { header("Location: ./"); exit(); }
 
 ?><!DOCTYPE html>
 <html lang="ru">

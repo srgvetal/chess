@@ -5,7 +5,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!='/admin.php') { header("Location: /"); exit(); }
+if ($cb!='admin.php') { header("Location: ./"); exit(); }
 
 $query = mysql_query("SELECT puzzle_fen_finished, annotation, puzzlesolve_jhistory, puzzlesolve_thistory, puzzlesolve_blacklast FROM puzzlesolves WHERE puzzle_id='".$_POST['puzzle_id']."' AND user_id='".$_POST['user_id']."' AND ((puzzlesolves.puzzlesolve_jhistory<>'' AND puzzlesolves.puzzlesolve_jhistory IS NOT NULL)) ORDER BY puzzlesolve_timestamp DESC LIMIT 1;");
 

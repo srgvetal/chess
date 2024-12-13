@@ -20,7 +20,7 @@ function refresh_chat() {
     if ($_GET['id']) get_id_puzzle=$_GET['id']; else get_id_puzzle=0;
 
     $.ajax({
-        url: '/refresh_chat_admin.php',
+        url: 'refresh_chat_admin.php',
         type: 'POST',
         data: { user: $_GET['user'],
             puzzle: get_id_puzzle },
@@ -39,7 +39,7 @@ $('#new_message').click(function(){
     if ($_GET['id']) get_id_puzzle=$_GET['id']; else get_id_puzzle=0;
     
     $.ajax({
-        url: '/send_chat_admin.php',
+        url: 'send_chat_admin.php',
         type: 'POST',
         data: { user: $_GET['user'],
             puzzle: get_id_puzzle,
@@ -64,7 +64,7 @@ if ($_GET['id']) get_id_puzzle=$_GET['id']; else get_id_puzzle=0;
 
 if (confirm("Очистить чат?"))
     $.ajax({
-        url: '/clear_chat_admin.php',
+        url: 'clear_chat_admin.php',
         type: 'POST',
         data: { user: $_GET['user'],
             puzzle: get_id_puzzle },

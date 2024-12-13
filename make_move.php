@@ -5,7 +5,7 @@
 require_once('check.php');
 $cb=check();
 
-if ($cb!='/user.php') { header("Location: /"); exit(); }
+if ($cb!='user.php') { header("Location: ./"); exit(); }
 
 // echo 'php: '.$_POST['blacklast'];
 

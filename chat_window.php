@@ -19,7 +19,7 @@ function refresh_chat() {
     if ($_GET['id']) get_id_puzzle=$_GET['id']; else get_id_puzzle=0;
 
     $.ajax({
-        url: '/refresh_chat.php',
+        url: 'refresh_chat.php',
         type: 'POST',
         data: { puzzle: get_id_puzzle },
         success: function(result) {
@@ -36,7 +36,7 @@ $('#new_message').click(function(){
     if ($_GET['id']) get_id_puzzle=$_GET['id']; else get_id_puzzle=0;
 
     $.ajax({
-        url: '/send_chat.php',
+        url: 'send_chat.php',
         type: 'POST',
         data: { user: $_GET['user'],
             puzzle: get_id_puzzle,

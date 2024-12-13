@@ -11,7 +11,7 @@ $(document).ready(function(){
         faspinloaded=false;
         faspinrotating();
         $.ajax({
-                url: '/refresh_news.php',
+                url: 'refresh_news.php',
                 type: 'POST',
                 success: function(result) {
                     faspinloaded=true;
