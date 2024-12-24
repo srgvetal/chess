@@ -19,7 +19,7 @@ if ($cb!="admin.php") { header("Location: ./"); exit(); }
 		<link href="css/font-awesome.css" rel="stylesheet">
 		<link href="css/style-1.1.css" rel="stylesheet">
 
-		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/user_page.js"></script>
 	</head>
 	<body>

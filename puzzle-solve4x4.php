@@ -21,7 +21,7 @@ if ($_GET['id']&&$cb!='user.php') { header("Location: ./"); exit(); }
     <link rel='stylesheet' href='css/style_chess-1.1.css' type='text/css'/>
     <link rel='stylesheet' href='css/main.css' type='text/css'/>
     
-    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <script src="js/create-1.1.js" type='text/javascript'></script>
     <script src="js/chessboard-0.3.6_solve.js" type='text/javascript'></script>

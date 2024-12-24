@@ -20,7 +20,7 @@ if ($cb=="admin.php"||$cb=="user.php") { header("Location: $cb"); exit(); }
 		<link href="css/font-awesome.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 
-		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="js/jquery.min.js"></script>
 		<script src="js/reg1-1.js"></script>
 	</head>
 	<body class="login">

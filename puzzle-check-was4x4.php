@@ -21,7 +21,7 @@ if ($_GET['id']&&$_GET['user']&&$cb!='admin.php') { header("Location: ./"); exit
     <link rel='stylesheet' href='css/create.css' type='text/css'/>
     <link rel='stylesheet' href='css/main.css' type='text/css'/>
     
-    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <script src="js/create-1.1.js" type='text/javascript'></script>
     <script src="js/main4x4.js" type='text/javascript'></script>
